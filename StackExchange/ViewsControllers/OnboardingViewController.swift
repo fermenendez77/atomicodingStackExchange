@@ -95,6 +95,8 @@ extension OnboardingViewController : OnboardingView {
     }
     
     func showError() {
+        indicatorView.isHidden = true
+        indicatorView.stopAnimating()
         let alert = UIAlertController(title: "Error",
                                       message: "An error ocurred trying to get the data",
                                       preferredStyle: .alert)

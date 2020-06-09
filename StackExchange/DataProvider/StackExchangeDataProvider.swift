@@ -39,7 +39,9 @@ class StackExchangeDataProvider : ApiDataProvider {
             guard let response = response as? HTTPURLResponse,
                 response.statusCode == 200,
                 let data = data else {
-                    errorHandler(.notFoundError)
+                    DispatchQueue.main.async {
+                        errorHandler(.notFoundError)
+                    }
                     return
             }
             do {
@@ -49,7 +51,9 @@ class StackExchangeDataProvider : ApiDataProvider {
                 }
                 
             } catch {
-                errorHandler(.parseError)
+                DispatchQueue.main.async {
+                    errorHandler(.parseError)
+                }
             }
             
         }
