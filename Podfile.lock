@@ -1,0 +1,20 @@
+PODS:
+  - OAuthSwift (2.0.0)
+  - PureLayout (3.1.6)
+
+DEPENDENCIES:
+  - OAuthSwift (~> 2.0.0)
+  - PureLayout
+
+SPEC REPOS:
+  trunk:
+    - OAuthSwift
+    - PureLayout
+
+SPEC CHECKSUMS:
+  OAuthSwift: 6805456763cf1c7ae0c16765257ed430b7aacae7
+  PureLayout: bd3c4ec3a3819ad387c99ebb72c6b129c3ed4d2d
+
+PODFILE CHECKSUM: 06f6ba9389dbe185bc175d82f49441506a89d6ee
+
+COCOAPODS: 1.9.0
